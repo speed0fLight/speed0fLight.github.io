@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    
+}
+body {
+    margin: 0px;
+    background-color: beige;
+}
+
+.centerDiv {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: rgb(128, 189, 242);
+}
+
+#imageDiv {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
