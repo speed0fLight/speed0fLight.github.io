@@ -3,13 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="index.css">
-
+  <!-- <link rel="stylesheet" href="index.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  
 </head>
-<body>
-  <h1>Welcome to My Portfolio</h1>
-  <p>Select which part you'd like to explore:</p>
-  <a class="button" href="/roblox">🎮 Roblox Game Dev</a>
-  <a class="button" href="/software">💻 Software Engineering</a>
+<body class="body">
+  <header class="header bg-primary">
+    <div id="titleAnimationBlock">
+      <h1 class="h1" style="color: white;">Welcome to My Portfolio</h1>
+      <div class="div bg-primary" id="titleBlocker"> </div>
+    </div>
+
+    
+    <style>
+      #titleBlocker {
+        display: block;
+        height: 50px;
+        /* position: absolute; */
+        animation: titleUnblock 2s, ease-out forwards;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes titleUnblock {
+        from {
+          transform: translateY(-50px);
+        }
+        to {
+          transform: translateY(-100px);
+        }
+      }
+    </style>
+
+    <div id="subheader">
+      <h2>Select which part you'd like to explore:</h2>
+    </div>
+
+    <style>
+      #subheader {
+        opacity: 0;
+        animation: fadeOut 2s ease-in;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+      }
+
+      @keyframes fadeOut {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  
+  </header>
+  <main>
+     <!-- <div class="container-fluid" href="/roblox">🎮 Roblox Game Dev</div>
+     <div class="button" href="/software">💻 Software Engineering</div>
+    <div class="button" href="/software">🌎 About me</div> -->
+  <!-- Make a card that is vertical -->
+  <div class="card" style="width: 18rem;">
+  <img src="images/apple.png" class="card-img-top" alt="A picture of something.">
+  <div class="card-body">
+
+    <h5 class="card-title">About me</h5>
+    <p class="card-text">An overview of where I’ve been, what I’ve learned, and where I’m headed.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+  </main>
 </body>
 </html>
