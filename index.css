@@ -1,19 +1,8 @@
-body {
-      font-family: sans-serif;
-      text-align: center;
-      padding: 50px;
+main {
+    background-color: rgb(39, 97, 214);
+    scroll-behavior: smooth;
 }
-.button {
-    display: inline-block;
-    margin: 20px;
-    padding: 20px 40px;
-    font-size: 1.5rem;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-.button:hover {
-    background-color: #0056b3;
+
+header {
+    margin-bottom: 0;
 }
