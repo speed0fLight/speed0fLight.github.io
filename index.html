@@ -40,60 +40,12 @@
     </div>
   </div>
 
-
-
-
-    <style>
-      #titleBlocker {
-        display: block;
-        width: 50%;
-        height: 50px;
-        background-color: white;
-        position: absolute;
-        top: 0px;
-        /* start at top of parent */
-        left: 0px;
-        z-index: 5;
-
-        animation: titleUnblock 2s ease-out forwards;
-      }
-
-      @keyframes titleUnblock {
-        from {
-          transform: translateY(0px);
-        }
-
-        to {
-          transform: translateY(-100px);
-        }
-      }
-    </style>
-
-    <style>
-      #subheader {
-        opacity: 0;
-        animation: fadeOut 2s ease-in;
-        animation-fill-mode: forwards;
-        animation-delay: 2s;
-      }
-
-      @keyframes fadeOut {
-        from {
-          opacity: 0;
-        }
-
-        to {
-          opacity: 1;
-        }
-      }
-    </style>
-
   </header>
   <!-- v-- MAIN SECTION --v -->
   <main>
-   <div class="display-5 text-white text-center" style="display: block; height: 200px;">↓Scroll Down↓</div> <!-- filler -->
-    <div>
-      <div class="h2 mt-3 text-center mx-auto w-50">Quick Cards</div>
+   <div style="display: block; height: 100px;"></div> <!-- filler -->
+    <div id="maininfo">
+      <div class="h2 mt-3 text-center mx-auto w-50" style="color: white;">Quick Cards</div>
       <hr class="mx-auto" style="width: 50%; border-top: 2px solid;">
 
       <div class="card mx-auto mt-2 mb-5" style="width: 50%;"> <!-- Software Engineering */ -->
@@ -118,16 +70,53 @@
           <a href="/roblox" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
-
-      <div class="fs-1 text-light mx-auto" style="width: fit-content;">About me</div>
+    
+      <div class="w-100" style="z-index: 2;">
+        <h1 class="display-5 mx-auto text-center" style="position: absolute; width: 100%;">Introduction</h1>
+        <div class="d-flex justify-content-center">
+          <img src="./images/frames.png" width="300px" height="75px">
+        </div>
+      </div>
 
       <hr style="width: 30%; border-top: 3px solid #07213d;" class="mx-auto my-4">
 
-      <h1>Introduction</h1>
-      <p class="p text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione accusamus eveniet corporis, temporibus maxime ducimus commodi ex nisi dicta aliquam dolorum quaerat sint enim dignissimos vero id, accusantium ad nam.</p>
-  </main>
-  <footer>
-    filler
+      
+      <div class="w-75 mx-auto mt-4" style="padding: 50px; background-color: white; display: block; border-radius: 5px; height: auto; font-family: sans-serif;">
+        <h5>About me</h5>
+        <p class="text-dark">
+            I'm a passionate and driven person with a very collected mindset. I have a strong foundation computer science, software engineering, and game development; I'm eager to apply myself to a role that not only helps me understand these concepts more, but also helps me use the skills i've learned along the way.
+        </p>
+        <h5>How I gain experience</h5>
+        <p class="text-dark">
+             My experience comes from scripting complex systems to building projects in C, C++, Python, Java, and JS. I also have a hobby myself with Roblox Studio.
+        </p>
+        <h5>How I improve myself</h5>
+        <p class="text-dark">
+             College aside, I also practice LeetCode problem solving and study lower languages such as x86 Assembly, alongside reverse engineering and build software projects like websites using JS, Flask, and HTML/CSS, I also make programs for simple math algorithms.
+        </p>
+        <h5>What makes me stand out?</h5>
+        <p class="text-dark">
+             What sets me apart is my approach to learning, I can adapt and communicate efficiently with a team. For adaptation, using documentation is applicable for someone like me as I can rapidly develop skills in new tools quickly especially in a fast-paced work environment. I can do with optimizing algorithms for efficiency/collaborating with teammates on creative projects.
+        </p>
+        <h5>My future careers</h5>
+        <p class="text-dark">
+            I am looking for opportunities that can understand these values and show me the real challenges that are faced in the field of SWE, and that allow me to contribute to a forward-thinking engineering team where I can apply my skills, continue growing as a developer, and make a real impact.
+        </p>
+      </div>
+      
+      <div style="display: block; height: 100px;"></div> <!-- filler -->
+    </main>
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <p class="mb-1">&copy; 2025 speed0fLight's Portfolio</p>
+      <div class="h6">
+        Social Links:
+      </div>
+      <p class="mb-0">
+        <a href="https://www.linkedin.com/in/justin-negron-a7a8b61a2/" target="_blank" class="text-light me-3">LinkedIn</a>
+        <a href="https://github.com/speed0fLight" target="_blank" class="text-light">Github</a>
+      </p>
+    </div>
   </footer>
 </body>
 

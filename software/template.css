@@ -1,32 +1,4 @@
-main {
-    background-color: rgb(39, 97, 214);
-    scroll-behavior: smooth;
-}
-
-header {
-    margin-bottom: 0;
-}
-
-#maininfo {
-    opacity: 0;
-    animation: fadeinUpwards 2s forwards;
-    animation-delay: 1s;
-}
-
-@keyframes fadeinUpwards {
-
-    /* Starts down, pulls it up */
-    from {
-        transform: translateY(200px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
+/* Copy header info here */
 #titleBlocker {
     display: block;
     width: 50%;
@@ -56,14 +28,15 @@ header {
     animation: fadeOut 2s ease-in;
     animation-fill-mode: forwards;
     animation-delay: 2s;
+
 }
 
 @keyframes fadeOut {
-    from {
-        opacity: 0;
-    }
+        from {
+            opacity: 0;
+        }
 
-    to {
-        opacity: 1;
+        to {
+            opacity: 1;
+        }
     }
-}

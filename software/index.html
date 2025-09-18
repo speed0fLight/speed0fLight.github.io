@@ -1,19 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Software Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-  
+  <link rel="stylesheet" href="template.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-  <h1>Software Engineering Projects</h1>
-  <p>Here are some of my software projects in Python, JS, and more.</p>
-  <div class="project">
-    <h2>Project Name</h2>
-    <p>Description, GitHub repo, live demo link</p>
-  </div>
+  <header class="header d-flex justify-content-between align-items-center bg-primary p-3">
+    <!-- LEFT SIDE -->
+    <div class="d-flex flex-column justify-content-between text-white">
+      <div id="titleAnimationBlock">
+        <h1 class="h1">Portfolio</h1>
+        <div class="bg-primary" id="titleBlocker"></div>
+      </div>
+      <div id="subheader">
+        <h2 class="h2 mb-0" style="color: black;">Programming Edition</h2>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div>
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle text-light" type="button" data-bs-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" id="dropdownMenuButton">Quick Links</button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="universalDropdown">
+          <a class="dropdown-item" href="../index.html">Home</a>
+          <a class="dropdown-item disabled" href="../software">Software Engineer/Related</a>
+          <a class="dropdown-item" href="/roblox">Roblox</a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <main class="py-5" style="background-color: rgb(183, 222, 255)">
+    <h1 class="text-center">Software Engineering Projects</h1>
+    <p class="text-center">Here are some of my software projects in Python, JS, and more.</p>
+
+    <div class="d-flex flex-row p-5">
+      <!-- left side (description) -->
+      <div class="container col-lg-6" style="background-color: rgb(168, 196, 249);">
+        <p>This project involves the use of accounts which are stored on databases.
+          The notes of an account are saved via POST requests sent from javascript.
+          The communication between the front end and backend is secure.
+        </p>
+        <p>The frameworks used on the website are flask and bootstrap. Flask is used
+          as a tool to load websites dynamically from templates that are programmed to
+          load data from a source. With that data, it proceeds to fill fields on a html page.
+          Bootstrap allows dynamic html CSS typing without a need for longer classes and such.
+          For example, the website you are viewing this on right now uses bootstrap for button control
+          and scaling.</p>
+        <hr>
+        <div class="container-fluid mx-auto text-center">
+          <small style="font-size: 0.6em;">A list of frameworks/languages in which the program was made in</small>
+        </div>
+        <div class="container-fluid d-block flex-column p-2">
+          <img width="50" height="50" src="../images/flaskLogo.png" alt="small icon of flask">
+          <img width="50" height="50" src="../images/pythonLogo.png" alt="a small python logo">
+          <img width="50" height="50" src="../images/jsLogo.png" alt="a small java script logo">
+          <img width="50" height="50" src="../images/sqlLogo.webp" alt="a small sequel logo">
+          <img width="50" height="50" src="../images/htmlLogo.png" alt="a small html logo">
+          <img width="50" height="50" src="../images/cssLogo2.png" alt="a small css logo">
+        </div>
+      </div>
+      <!-- right side -->
+      <div class="container col-lg-6" style="background-color: rgb(163, 181, 249);">
+        <div class="container rounded-top" style="padding: 0px;"> <!-- Should be a card -->
+          <h2 class="container-fluid" style="background-color: red; color: white;">Todo-list website</h2>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/hL007gbrJ7U?si=VwMyNei8U8LuHs6u" allowfullscreen muted></iframe>
+          </div>
+          <pre>
+        Sources
+        Demos
+      </pre>
+          <p>GitHub repo, live demo link</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <p class="mb-1">&copy; 2025 speed0fLight's Portfolio</p>
+      <div class="h6">
+        End of page
+      </div>
+      <p class="mb-0"></p>
+    </div>
+  </footer>
 </body>
+
 </html>
